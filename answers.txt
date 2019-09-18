@@ -2,3 +2,21 @@
 2.What does fast-forward in Git mean?
 3.Why should you have different branches?
 4.In a project how many remote Git repositories do you usually have?
+
+Answers
+1. gitignore file contains all the file extensions for files we do not
+want to put in source control. It should include .project file.
+
+2. Git does a fast forward when you merge a branch that is ahead of your
+checkedout-branch.When we try to merge one commit with a commit that can be
+reached by following the first commit's history , Git simplifies things by
+moving the pointer forward because there is no divergent work to merge
+together.
+
+3. Branches help you organize the workflow more efficiently. If there are
+5 members in a project it would be a good idea to have 5 branches for
+each developer where they can make changes on their own and later on merge 
+the changes with the master branch.
+
+4. We can have as many remotes as we want but we can have only one remote 
+named "origin". So we usually have only one remote.
